@@ -10,9 +10,9 @@ namespace EMedicineBackEnd.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Manufacturer { get; set; }
-        public string UnitPrice { get; set; }
-        public string Discount { get; set; }
-        public string Quantity { get; set; }
+        public decimal UnitPrice { get; set; }
+        public decimal Discount { get; set; }
+        public int Quantity { get; set; }
         public string ExpDate { get; set; }
         public string ImageUrl { get; set; }
         public int Status { get; set; }

@@ -70,7 +70,7 @@ namespace EMedicineBackEnd.Controllers
             try
             {
                
-                string path = Path.Combine(@"D:\EMedicine\Frontend\public\assets\images\", fileModel.FileName);
+                string path = Path.Combine(@"C:\Users\suman\OneDrive\Desktop\E-Medicine asp.net core\emedicinefrontend\public\assets\images\", fileModel.FileName);
                 using (Stream stream = new FileStream(path, FileMode.Create))
                 {
                     fileModel.FormFile.CopyTo(stream);

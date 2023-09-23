@@ -377,9 +377,9 @@ namespace EMedicineBackEnd.Models
                         medicine.ID = Convert.ToInt32(dt.Rows[i]["ID"]);
                         medicine.Name = Convert.ToString(dt.Rows[i]["Name"]);
                         medicine.Manufacturer = Convert.ToString(dt.Rows[i]["Manufacturer"]);
-                        medicine.UnitPrice = Convert.ToString(dt.Rows[i]["UnitPrice"]);
-                        medicine.Discount = Convert.ToString(dt.Rows[i]["Discount"]);
-                        medicine.Quantity = Convert.ToString(dt.Rows[i]["Quantity"]);
+                        medicine.UnitPrice = Convert.ToDecimal(dt.Rows[i]["UnitPrice"]);
+                        medicine.Discount = Convert.ToDecimal(dt.Rows[i]["Discount"]);
+                        medicine.Quantity = Convert.ToInt32(dt.Rows[i]["Quantity"]);
                         medicine.ExpDate = Convert.ToString(dt.Rows[i]["ExpDate"]);
                         medicine.ImageUrl = Convert.ToString(dt.Rows[i]["ImageUrl"]);
                         medicine.Status = Convert.ToInt32(dt.Rows[i]["Status"]);

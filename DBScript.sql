@@ -88,9 +88,9 @@ CREATE TABLE [dbo].[Cart](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[UserId] [int] NULL,
 	[MedicineID] [int] NULL,
-	[UnitPrice] [decimal](18, 2) NULL,
-	[Discount] [decimal](18, 2) NULL,
-	[Quantity] [int] NULL,
+	[UnitPrice] [varchar](100) NULL,
+	[Discount] [varchar](100) NULL,
+	[Quantity] [varchar](100) NULL,
 	[TotalPrice] [decimal](18, 2) NULL,
 PRIMARY KEY CLUSTERED 
 (
